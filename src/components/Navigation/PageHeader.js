@@ -8,9 +8,9 @@ const pageHeader = (props) => {
       <div className="page-header page-header-light">
         <div className="page-header-content header-elements-md-inline">
           <div className="page-title d-flex">
-            <h4>
+            <h6>
               <i className="icon-arrow-left52 mr-2"></i> {props.headerTitle}
-            </h4>
+            </h6>
           </div>
         </div>
 

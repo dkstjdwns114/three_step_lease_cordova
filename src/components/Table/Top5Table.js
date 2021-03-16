@@ -7,14 +7,18 @@ const top5Table = (props) => {
       <div className="col-md-6">
         <div className="card">
           <div className="card-header header-elements-inline">
-            <h5 className="card-title">{props.cardTitle}</h5>
+            <h5 className="card-title" style={{ fontSize: "15px" }}>
+              {props.cardTitle}
+            </h5>
           </div>
-          <div className="card-body">{props.cardDesc}</div>
+          <div className="card-body" style={{ fontSize: "11px" }}>
+            {props.cardDesc}
+          </div>
           <div className="table-responsive">
             <table className="table table-bordered">
               <thead>
                 <tr>
-                  <th>Rate</th>
+                  {/* <th>Rate</th> */}
                   <th>Address</th>
                   <th>Total</th>
                   <th>Remarks</th>
@@ -23,8 +27,8 @@ const top5Table = (props) => {
               <tbody>
                 {props.contents.map((area, idx) => {
                   return (
-                    <tr key={area.rdmAdr}>
-                      <td>{idx + 1}</td>
+                    <tr key={area.rdmAdr} style={{ fontSize: "11px" }}>
+                      {/* <td>{idx + 1}</td> */}
                       <td>{area.rdmAdr}</td>
                       <td>{area.cnt}</td>
                       <td>{area.trait ? area.trait : "-"}</td>

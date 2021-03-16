@@ -6,7 +6,9 @@ const signguTable = (props) => {
       {/* Bordered table */}
       <div className="card">
         <div className="card-header header-elements-inline">
-          <h5 className="card-title">{props.cardTitle}</h5>
+          <h5 className="card-title" style={{ fontSize: "15px" }}>
+            {props.cardTitle}
+          </h5>
         </div>
         <div className="card-body">{props.cardDesc}</div>
         <div className="table-responsive">
@@ -22,7 +24,7 @@ const signguTable = (props) => {
             <tbody>
               {props.contents.map((area, idx) => {
                 return (
-                  <tr key={area.name + idx}>
+                  <tr key={area.name + idx} style={{ fontSize: "12px" }}>
                     <td>{idx + 1}</td>
                     <td>{area.name}</td>
                     <td>{props.numberComma(area.cnt)}</td>

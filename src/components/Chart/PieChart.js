@@ -73,7 +73,9 @@ const PieChart = (props) => {
       <div className="col-md-6">
         <div className="card">
           <div className="card-header header-elements-inline">
-            <h5 className="card-title">{props.cardTitle}</h5>
+            <h5 className="card-title" style={{ fontSize: "15px" }}>
+              {props.cardTitle}
+            </h5>
           </div>
           <div className="card-body">
             <p className="mb-3">{`총 ${props.numberComma(totalCnt)}개`}</p>
@@ -81,7 +83,7 @@ const PieChart = (props) => {
               <div className="d-inline-block">
                 <Chart
                   width="270px"
-                  height={chartHeight}
+                  height="230px"
                   chartType="PieChart"
                   loader={<div>Loading Chart</div>}
                   data={[

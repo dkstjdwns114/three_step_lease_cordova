@@ -468,11 +468,15 @@ const MainMap = (props) => {
     <>
       <div className="card">
         <div className="card-header header-elements-inline">
-          <h5 className="card-title">{props.cardTitle}</h5>
+          <h5 className="card-title" style={{ fontSize: "15px" }}>
+            {props.cardTitle}
+          </h5>
         </div>
 
         <div className="card-body">
-          <p className="mb-3">{props.cardDesc}</p>
+          <p className="mb-3" style={{ fontSize: "12px" }}>
+            {props.cardDesc}
+          </p>
           <div
             className="map-container"
             id="map_marker_simple"
