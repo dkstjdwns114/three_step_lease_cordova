@@ -33,7 +33,6 @@ const pieOptions = {
     }
   ],
   chartArea: {
-    left: 50,
     width: "100%",
     height: "100%"
   },
@@ -70,7 +69,7 @@ const PieChart = (props) => {
     });
     setTotalCnt(total);
     if (props.path === "/") {
-      setChartHeight("340px");
+      setChartHeight("260px");
     } else if (props.path === "/city/:code") {
       setChartHeight("230px");
     }
@@ -87,7 +86,7 @@ const PieChart = (props) => {
             <div className="chart-container has-scroll text-center">
               <div className="d-inline-block">
                 <Chart
-                  width="500px"
+                  width="270px"
                   height={chartHeight}
                   chartType="PieChart"
                   loader={<div>Loading Chart</div>}
