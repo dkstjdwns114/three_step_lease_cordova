@@ -51,7 +51,6 @@ const PieChart = (props) => {
   const [oCnt, setOCnt] = useState(0);
   const [lCnt, setLCnt] = useState(0);
   const [totalCnt, setTotalCnt] = useState(0);
-  const [chartHeight, setChartHeight] = useState("");
 
   useEffect(() => {
     let total = 0;
@@ -68,11 +67,6 @@ const PieChart = (props) => {
       total += res.count;
     });
     setTotalCnt(total);
-    if (props.path === "/") {
-      setChartHeight("260px");
-    } else if (props.path === "/city/:code") {
-      setChartHeight("230px");
-    }
   }, [props]);
   return (
     <>
