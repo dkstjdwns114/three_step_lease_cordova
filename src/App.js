@@ -1,22 +1,37 @@
+import React, { Component } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link,
+  Redirect
+} from "react-router-dom";
+// import HomePage from "./pages/HomePage";
+// import CoordinateMapPage from "./pages/SameCoordinatesPage";
+import MainNavbar from "./components/Navigation/MainNavbar";
+// import SideNavbar from "./components/Navigation/SideNavbar";
+// import CityPage from "./pages/CityPage";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <Router>
+        <MainNavbar />
+        {/* <div className="page-content">
+          <Route path="/" component={SideNavbar} />
+          <Switch>
+            <div className="content-wrapper">
+              <Route exact path="/" component={HomePage} />
+              <Route path="/same_coordinates" component={CoordinateMapPage} />
+              <Route path="/city/:code" component={CityPage} />
+            </div>
+          </Switch>
+        </div> */}
+      </Router>
+    );
+  }
 }
-
