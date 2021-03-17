@@ -9,6 +9,16 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+
+    <!-- Allow links to example.com -->
+    <allow-navigation href="http://*/*" />
+
+    <!-- Wildcards are allowed for the protocol, as a prefix to the host, or as a suffix to the path -->
+    <allow-navigation href="*://*.example.com/*" />
+
+    <!-- A wildcard can be used to whitelist the entire network, over HTTP and HTTPS. *NOT RECOMMENDED* -->
+    <allow-navigation href="*" />
+    
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
@@ -18,6 +28,9 @@
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
+    <edit-config xmlns:android="http://schemas.android.com/apk/res/android" file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+        <application android:usesCleartextTraffic="true" />
+    </edit-config>
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />

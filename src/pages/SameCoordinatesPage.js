@@ -17,7 +17,7 @@ export default class SameCoordinatesPage extends Component {
   }
 
   fetchData = () => {
-    fetch("/api/same_coordinates")
+    fetch("http://52.79.102.189:8080/api/same_coordinates")
       .then((res) => {
         return res.json();
       })

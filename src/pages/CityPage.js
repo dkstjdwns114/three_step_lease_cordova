@@ -22,7 +22,7 @@ export default class CityPage extends Component {
 
   fetchData = () => {
     let cityCode = this.props.match.params.code;
-    fetch(`/api/city/${cityCode}`)
+    fetch(`http://52.79.102.189:8080/api/city/${cityCode}`)
       .then((res) => {
         return res.json();
       })

@@ -19,7 +19,7 @@ export default class HomePage extends Component {
   }
 
   fetchData = () => {
-    fetch("/api/main")
+    fetch("http://52.79.102.189:8080/api/main")
       .then((res) => {
         return res.json();
       })
