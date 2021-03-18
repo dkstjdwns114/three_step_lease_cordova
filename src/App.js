@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as HashRouter, Route, Switch } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import CoordinateMapPage from "./pages/SameCoordinatesPage";
 import MainNavbar from "./components/Navigation/MainNavbar";
@@ -9,7 +9,7 @@ import CityPage from "./pages/CityPage";
 export default class App extends Component {
   render() {
     return (
-      <Router>
+      <HashRouter>
         <MainNavbar />
         <div className="page-content">
           <Route path="/" component={SideNavbar} />
@@ -23,7 +23,7 @@ export default class App extends Component {
             </>
           </Switch>
         </div>
-      </Router>
+      </HashRouter>
     );
   }
 }
