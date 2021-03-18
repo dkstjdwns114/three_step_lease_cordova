@@ -102,5 +102,35 @@
   </head>
   <body class="navbar-top">
     <div id="app"></div>
+    <script>
+      var Permission = window.plugins.Permission;
+
+      // request grant for a permission
+      var permission = "android.permission.RECORD_AUDIO";
+      Permission.request(
+        permission,
+        function (results) {
+          if (results[permission]) {
+            // permission is granted
+          }
+        },
+        alert
+      );
+
+      // request grant for multiple permissions
+      var permissions = [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_CONTACTS"
+      ];
+      Permission.request(
+        permissions,
+        function (results) {
+          if (results["android.permission.RECORD_AUDIO"]) {
+            // permission is granted
+          }
+        },
+        alert
+      );
+    </script>
   </body>
 </html>
