@@ -1,8 +1,25 @@
 import React, { useEffect } from "react";
 const { kakao } = window;
 
-const MainMap = (props) => {
+const CityMap = (props) => {
   useEffect(() => {
+    let value = props.valueStr;
+    let cities = props.city_close_20;
+
+    if (value === "city_close_19") {
+      cities = props.city_close_19;
+    } else if (value === "city_open_19") {
+      cities = props.city_open_19;
+    } else if (value === "city_close_20") {
+      cities = props.city_close_20;
+    } else if (value === "city_open_20") {
+      cities = props.city_open_20;
+    }
+
+    kakaoMapHandler(cities);
+  }, [props.valueStr]);
+
+  const kakaoMapHandler = (cities) => {
     let busan;
     let chungbuk;
     let chungnam;
@@ -21,7 +38,7 @@ const MainMap = (props) => {
     let seoul;
     let ulsan;
 
-    props.cities.forEach((res) => {
+    cities.forEach((res) => {
       res.city === "busan" && (busan = res.count);
       res.city === "chungbuk" && (chungbuk = res.count);
       res.city === "chungnam" && (chungnam = res.count);
@@ -41,7 +58,7 @@ const MainMap = (props) => {
       res.city === "ulsan" && (ulsan = res.count);
     });
 
-    const container = document.getElementById("map_marker_simple");
+    const container = document.getElementById("city_map");
     const options = {
       center: new kakao.maps.LatLng(35.6783, 127.9558),
       level: 13,
@@ -57,7 +74,7 @@ const MainMap = (props) => {
 
     // 경기
     let gyeonggidoContent = `
-      <a href="/city/41">
+      <a href="/city/gyeonggi">
         <div class="overlaybox">
           <div class="boxtitle">경기</div>
           <ul>
@@ -81,7 +98,7 @@ const MainMap = (props) => {
 
     // 서울
     let seoulContent = `
-      <a href="/city/11">
+      <a href="/city/seoul">
         <div class="overlaybox">
           <div class="boxtitle">서울</div>
           <ul>
@@ -105,7 +122,7 @@ const MainMap = (props) => {
 
     // 인천
     let incheonContent = `
-      <a href="/city/28">
+      <a href="/city/incheon">
         <div class="overlaybox">
           <div class="boxtitle">인천</div>
           <ul>
@@ -129,7 +146,7 @@ const MainMap = (props) => {
 
     // 강원
     let gangwondoContent = `
-      <a href="/city/42">
+      <a href="/city/gangwon">
         <div class="overlaybox">
           <div class="boxtitle">강원</div>
           <ul>
@@ -153,7 +170,7 @@ const MainMap = (props) => {
 
     // 충북
     let chungbukContent = `
-      <a href="/city/43">
+      <a href="/city/chungbuk">
         <div class="overlaybox">
           <div class="boxtitle">충북</div>
           <ul>
@@ -177,7 +194,7 @@ const MainMap = (props) => {
 
     // 경북
     let gyeongbukContent = `
-      <a href="/city/47">
+      <a href="/city/gyeongbuk">
         <div class="overlaybox">
           <div class="boxtitle">경북</div>
           <ul>
@@ -201,7 +218,7 @@ const MainMap = (props) => {
 
     // 충남
     let chungnamContent = `
-      <a href="/city/44">
+      <a href="/city/chungnam">
         <div class="overlaybox">
           <div class="boxtitle">충남</div>
           <ul>
@@ -225,7 +242,7 @@ const MainMap = (props) => {
 
     // 세종
     let sejongContent = `
-      <a href="/city/36">
+      <a href="/city/sejong">
         <div class="overlaybox">
           <div class="boxtitle">세종</div>
           <ul>
@@ -249,7 +266,7 @@ const MainMap = (props) => {
 
     // 대전
     let daejeonContent = `
-      <a href="/city/30">
+      <a href="/city/daejeon">
         <div class="overlaybox">
           <div class="boxtitle">대전</div>
           <ul>
@@ -273,7 +290,7 @@ const MainMap = (props) => {
 
     // 대구
     let daeguContent = `
-      <a href="/city/27">
+      <a href="/city/daegu">
         <div class="overlaybox">
           <div class="boxtitle">대구</div>
           <ul>
@@ -297,7 +314,7 @@ const MainMap = (props) => {
 
     // 전북
     let jeonbukContent = `
-      <a href="/city/45">
+      <a href="/city/jeonbuk">
         <div class="overlaybox">
           <div class="boxtitle">전북</div>
           <ul>
@@ -321,7 +338,7 @@ const MainMap = (props) => {
 
     // 광주
     let gwangjuContent = `
-      <a href="/city/29">
+      <a href="/city/gwangju">
         <div class="overlaybox">
           <div class="boxtitle">광주</div>
           <ul>
@@ -345,7 +362,7 @@ const MainMap = (props) => {
 
     // 전남
     let jeonnamContent = `
-      <a href="/city/46">
+      <a href="/city/jeonnam">
         <div class="overlaybox">
           <div class="boxtitle">전남</div>
           <ul>
@@ -369,7 +386,7 @@ const MainMap = (props) => {
 
     // 경남
     let gyeongnamContent = `
-      <a href="/city/48">
+      <a href="/city/gyeongnam">
         <div class="overlaybox">
           <div class="boxtitle">경남</div>
           <ul>
@@ -393,7 +410,7 @@ const MainMap = (props) => {
 
     // 부산
     let busanContent = `
-      <a href="/city/26">
+      <a href="/city/busan">
         <div class="overlaybox">
           <div class="boxtitle">부산</div>
           <ul>
@@ -417,7 +434,7 @@ const MainMap = (props) => {
 
     // 울산
     let ulsanContent = `
-      <a href="/city/31">
+      <a href="/city/ulsan">
         <div class="overlaybox">
           <div class="boxtitle">울산</div>
           <ul>
@@ -441,7 +458,7 @@ const MainMap = (props) => {
 
     // 제주
     let jejuContent = `
-      <a href="/city/50">
+      <a href="/city/jeju">
         <div class="overlaybox">
           <div class="boxtitle">제주</div>
           <ul>
@@ -462,30 +479,17 @@ const MainMap = (props) => {
     });
     jejuOverlay.setMap(map);
     // end 제주
-  }, [props]);
+  };
 
   return (
     <>
-      <div className="card">
-        <div className="card-header header-elements-inline">
-          <h5 className="card-title" style={{ fontSize: "15px" }}>
-            {props.cardTitle}
-          </h5>
-        </div>
-
-        <div className="card-body">
-          <p className="mb-3" style={{ fontSize: "12px" }}>
-            {props.cardDesc}
-          </p>
-          <div
-            className="map-container"
-            id="map_marker_simple"
-            style={{ height: "600px" }}
-          ></div>
-        </div>
-      </div>
+      <div
+        className="map-container mt-30"
+        id="city_map"
+        style={{ height: "650px" }}
+      ></div>
     </>
   );
 };
 
-export default MainMap;
+export default CityMap;
