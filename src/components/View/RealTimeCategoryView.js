@@ -160,8 +160,8 @@ const RealTimeCategorylView = (props) => {
     } else {
       setLeftBtnActive(true);
       setOpenOrClose("폐업");
-      setLeftBtnClass("btn btn-round btn-default btn-sm btn-pill-left");
-      setRightBtnClass("btn btn-round btn-success btn-sm btn-pill-right");
+      setLeftBtnClass("btn btn-round btn-success btn-sm btn-pill-left");
+      setRightBtnClass("btn btn-round btn-default btn-sm btn-pill-right");
 
       if (currentDateValue === props.one_days_ago_date) {
         setCategoryData(props.one_days_ago.close.category);
