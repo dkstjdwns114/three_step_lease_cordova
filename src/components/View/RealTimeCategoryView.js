@@ -9,10 +9,10 @@ const RealTimeCategorylView = (props) => {
   const [leftBtnActive, setLeftBtnActive] = useState(true);
   const [tooltipTitle, setTooltipTitle] = useState("");
   const [leftBtnClass, setLeftBtnClass] = useState(
-    "btn btn-round btn-success btn-pill-left"
+    "btn btn-round btn-success btn-sm btn-pill-left"
   );
   const [rightBtnClass, setRightBtnClass] = useState(
-    "btn btn-round btn-default btn-pill-right"
+    "btn btn-round btn-default btn-sm btn-pill-right"
   );
 
   useEffect(() => {
@@ -132,8 +132,8 @@ const RealTimeCategorylView = (props) => {
     if (leftBtnActive) {
       setLeftBtnActive(false);
       setOpenOrClose("개업");
-      setLeftBtnClass("btn btn-round btn-default btn-pill-left");
-      setRightBtnClass("btn btn-round btn-success btn-pill-right");
+      setLeftBtnClass("btn btn-round btn-default btn-sm btn-pill-left");
+      setRightBtnClass("btn btn-round btn-success btn-sm btn-pill-right");
 
       if (currentDateValue === props.one_days_ago_date) {
         setCategoryData(props.one_days_ago.open.category);
@@ -160,8 +160,8 @@ const RealTimeCategorylView = (props) => {
     } else {
       setLeftBtnActive(true);
       setOpenOrClose("폐업");
-      setLeftBtnClass("btn btn-round btn-success btn-pill-left");
-      setRightBtnClass("btn btn-round btn-default btn-pill-right");
+      setLeftBtnClass("btn btn-round btn-default btn-sm btn-pill-left");
+      setRightBtnClass("btn btn-round btn-success btn-sm btn-pill-right");
 
       if (currentDateValue === props.one_days_ago_date) {
         setCategoryData(props.one_days_ago.close.category);
@@ -243,6 +243,7 @@ const RealTimeCategorylView = (props) => {
           type="button"
           className={leftBtnClass}
           onClick={btnClickHandler}
+          style={{ width: "80px" }}
         >
           폐업
         </button>
@@ -250,6 +251,7 @@ const RealTimeCategorylView = (props) => {
           type="button"
           className={rightBtnClass}
           onClick={btnClickHandler}
+          style={{ width: "80px" }}
         >
           개업
         </button>

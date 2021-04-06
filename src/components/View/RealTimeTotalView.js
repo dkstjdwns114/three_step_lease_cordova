@@ -9,10 +9,10 @@ const RealTimeTotalView = (props) => {
   const [csvDownData, setCsvDownData] = useState([]);
   const [leftBtnActive, setLeftBtnActive] = useState(true);
   const [leftBtnClass, setLeftBtnClass] = useState(
-    "btn btn-round btn-success btn-pill-left"
+    "btn btn-round btn-success btn-sm btn-pill-left"
   );
   const [rightBtnClass, setRightBtnClass] = useState(
-    "btn btn-round btn-default btn-pill-right"
+    "btn btn-round btn-default btn-sm btn-pill-right"
   );
   useEffect(() => {
     setCurrentDateValue(props.one_days_ago_date);
@@ -116,8 +116,8 @@ const RealTimeTotalView = (props) => {
     if (leftBtnActive) {
       setLeftBtnActive(false);
       setOpenOrClose("개업");
-      setLeftBtnClass("btn btn-round btn-default btn-pill-left");
-      setRightBtnClass("btn btn-round btn-success btn-pill-right");
+      setLeftBtnClass("btn btn-round btn-default btn-sm btn-pill-left");
+      setRightBtnClass("btn btn-round btn-success btn-sm btn-pill-right");
 
       if (currentDateValue === props.one_days_ago_date) {
         setCsvDownData(props.one_days_ago.open.data_list);
@@ -137,8 +137,8 @@ const RealTimeTotalView = (props) => {
     } else {
       setLeftBtnActive(true);
       setOpenOrClose("폐업");
-      setLeftBtnClass("btn btn-round btn-success btn-pill-left");
-      setRightBtnClass("btn btn-round btn-default btn-pill-right");
+      setLeftBtnClass("btn btn-round btn-success btn-sm btn-pill-left");
+      setRightBtnClass("btn btn-round btn-default btn-sm btn-pill-right");
 
       if (currentDateValue === props.one_days_ago_date) {
         setCsvDownData(props.one_days_ago.close.data_list);
@@ -213,6 +213,7 @@ const RealTimeTotalView = (props) => {
           type="button"
           className={leftBtnClass}
           onClick={btnClickHandler}
+          style={{ width: "80px" }}
         >
           폐업
         </button>
@@ -220,6 +221,7 @@ const RealTimeTotalView = (props) => {
           type="button"
           className={rightBtnClass}
           onClick={btnClickHandler}
+          style={{ width: "80px" }}
         >
           개업
         </button>
