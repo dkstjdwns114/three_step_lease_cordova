@@ -27,7 +27,7 @@ const DropDownMenu = (props) => {
               <div className="row">
                 <div className="col-md-6">
                   <h5>행정구역</h5>
-                  <ul className="blocks-3">
+                  <ul className="blocks-2">
                     <li className="mega-menu m-0">
                       <ul className="list-icons">
                         <li>
@@ -72,10 +72,6 @@ const DropDownMenu = (props) => {
                           ></i>
                           <Link to="/city/gwangju">광주광역시</Link>
                         </li>
-                      </ul>
-                    </li>
-                    <li className="mega-menu m-0">
-                      <ul className="list-icons">
                         <li>
                           <i
                             className="md-chevron-right"
@@ -97,6 +93,10 @@ const DropDownMenu = (props) => {
                           ></i>
                           <Link to="/city/busan">부산광역시</Link>
                         </li>
+                      </ul>
+                    </li>
+                    <li className="mega-menu m-0">
+                      <ul className="list-icons">
                         <li>
                           <i
                             className="md-chevron-right"
@@ -118,10 +118,6 @@ const DropDownMenu = (props) => {
                           ></i>
                           <Link to="/city/ulsan">울산광역시</Link>
                         </li>
-                      </ul>
-                    </li>
-                    <li className="mega-menu m-0">
-                      <ul className="list-icons">
                         <li>
                           <i
                             className="md-chevron-right"
