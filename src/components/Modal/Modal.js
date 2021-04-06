@@ -61,7 +61,7 @@ const Modal = (props) => {
                   프로그램 활용
                 </a>
               </li>
-              <li className="nav-item" role="presentation">
+              {/* <li className="nav-item" role="presentation">
                 <a
                   className="nav-link"
                   data-toggle="tab"
@@ -71,7 +71,7 @@ const Modal = (props) => {
                 >
                   소스코드
                 </a>
-              </li>
+              </li> */}
             </ul>
 
             <div className="modal-body">
@@ -114,7 +114,7 @@ const Modal = (props) => {
                   말씀드립니다.
                 </div>
 
-                <div className="tab-pane" id="exampleLine4" role="tabpanel">
+                {/* <div className="tab-pane" id="exampleLine4" role="tabpanel">
                   소스코드는{" "}
                   <a
                     href="https://github.com/dkstjdwns114/three_step_lease"
@@ -123,7 +123,7 @@ const Modal = (props) => {
                     깃허브
                   </a>
                   에서 참고하실 수 있습니다.
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
