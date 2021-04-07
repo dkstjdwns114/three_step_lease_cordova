@@ -197,8 +197,8 @@ const ChartistTest = (props) => {
 
   return (
     <>
-      <div className="ct-chart1" style={{ height: "500px" }}></div>
-      <div className="ct-chart2" style={{ height: "300px" }}></div>
+      <div className="ct-chart1 mb-30" style={{ height: "400px" }}></div>
+      <div className="ct-chart2" style={{ height: "400px" }}></div>
     </>
   );
 };

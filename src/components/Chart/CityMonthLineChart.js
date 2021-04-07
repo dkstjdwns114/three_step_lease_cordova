@@ -136,7 +136,11 @@ const CityMonthLineChart = (props) => {
     });
   };
 
-  return <Line data={data} options={options} />;
+  return (
+    <>
+      <Line data={data} options={options} height={400} />
+    </>
+  );
 };
 
 export default CityMonthLineChart;
