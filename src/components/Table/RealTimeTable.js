@@ -40,7 +40,7 @@ const RealTimeTable = (props) => {
         {
           id: "date",
           label: "개업일자",
-          minWidth: 130
+          minWidth: 150
         },
         {
           id: "city",

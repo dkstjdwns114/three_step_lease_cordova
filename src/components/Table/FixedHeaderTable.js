@@ -11,17 +11,17 @@ import TableRow from "@material-ui/core/TableRow";
 import Typography from "@material-ui/core/Typography";
 
 const columns = [
-  { id: "index", label: " ", minWidth: 50 },
+  { id: "index", label: " ", minWidth: 20 },
   { id: "store_name", label: "가게 이름", minWidth: 150 },
   {
     id: "classification",
     label: "업종",
-    minWidth: 130
+    minWidth: 200
   },
   {
     id: "close_date",
     label: "폐업일자",
-    minWidth: 120
+    minWidth: 150
   }
 ];
 
