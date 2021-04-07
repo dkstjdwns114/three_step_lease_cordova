@@ -99,6 +99,7 @@ export default class TypeDetailView extends Component {
                           ? this.state.activeBtnClass
                           : this.state.defaultBtnClass
                       }
+                      style={{ paddingLeft: "10px", paddingRight: "10px" }}
                       onClick={this.close_19_click_handler}
                     >
                       <span className="text-uppercase">19년 폐업</span>
@@ -110,6 +111,7 @@ export default class TypeDetailView extends Component {
                           ? this.state.activeBtnClass
                           : this.state.defaultBtnClass
                       }
+                      style={{ paddingLeft: "10px", paddingRight: "10px" }}
                       onClick={this.open_19_click_handler}
                     >
                       <span className="text-uppercase">19년 개업</span>
@@ -121,6 +123,7 @@ export default class TypeDetailView extends Component {
                           ? this.state.activeBtnClass
                           : this.state.defaultBtnClass
                       }
+                      style={{ paddingLeft: "10px", paddingRight: "10px" }}
                       onClick={this.close_20_click_handler}
                     >
                       <span className="text-uppercase">20년 폐업</span>
@@ -132,6 +135,7 @@ export default class TypeDetailView extends Component {
                           ? this.state.activeBtnClass
                           : this.state.defaultBtnClass
                       }
+                      style={{ paddingLeft: "10px", paddingRight: "10px" }}
                       onClick={this.open_20_click_handler}
                     >
                       <span className="text-uppercase">20년 개업</span>
