@@ -83,10 +83,7 @@ const ChartistTest = (props) => {
         labels: labelArray,
         series: [close19, open19, close20, open20]
       },
-      {
-        low: 17500,
-        plugins: [ChartistTooltip()]
-      }
+      { fullWidth: true, low: 17500, plugins: [ChartistTooltip()] }
     );
 
     let seq = 0;
