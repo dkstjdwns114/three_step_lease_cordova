@@ -16,7 +16,9 @@ const TabsAccording = (props) => {
           <div className="card-block p-0 p-30 h-full">
             <div className="counter text-left">
               <span className="counter-number">
-                {props.city_name} 2019년, 2020년 모두 폐업한 상가 주소 Top10
+                {props.city_name} 2019년, 2020년
+                <br />
+                모두 폐업한 상가 주소 Top10
               </span>
               <div className="counter-label text-uppercase mb-20 card-shadow">
                 {" "}

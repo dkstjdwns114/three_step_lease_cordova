@@ -43,7 +43,9 @@ export default class SameAddressView extends Component {
               <div className="row">
                 <div className="col-12 pt-30 px-50">
                   <p className="font-size-20 grey-700">
-                    {this.props.city_name} 2019년, 2020년 모두 폐업한 상가 지도
+                    {this.props.city_name} 2019년, 2020년
+                    <br />
+                    모두 폐업한 상가 지도
                   </p>
                   {!this.state.isLoading && (
                     <>
