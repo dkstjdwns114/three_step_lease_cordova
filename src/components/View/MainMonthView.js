@@ -13,48 +13,47 @@ const MainMonthView = (props) => {
               style={{ height: "calc(100% - 250px);" }}
             >
               <div className="row">
-                <div className="col-8 pt-20 px-20">
+                <div className="pt-20 px-20">
                   <p className="font-size-20 grey-700">{props.title}</p>
                   <p>{props.desc}</p>
                 </div>
 
-                <div className="col-4 pt-20 px-20 mt-50">
-                  <div className="float-right clearfix">
-                    <ul className="list-unstyled">
-                      <li className="mb-5">
-                        <i
-                          className="icon md-circle blue-500 mr-5"
-                          aria-hidden="true"
-                        ></i>{" "}
-                        2019년 폐업
-                      </li>
-                      <li className="mb-5">
-                        <i
-                          className="icon md-circle green-a300 mr-5"
-                          aria-hidden="true"
-                        ></i>{" "}
-                        2019년 개업
-                      </li>
-                      <li className="mb-5">
-                        <i
-                          className="icon md-circle red-500 mr-5"
-                          aria-hidden="true"
-                        ></i>{" "}
-                        2020년 폐업
-                      </li>
-                      <li className="mb-5">
-                        <i
-                          className="icon md-circle purple-500 mr-5"
-                          aria-hidden="true"
-                        ></i>{" "}
-                        2020년 개업
-                      </li>
-                    </ul>
+                <div className="col-xxl-12 col-md-12">
+                  <div className="text-center">
+                    <span className="center-block">
+                      <i
+                        className="icon md-circle blue-500 mr-5"
+                        aria-hidden="true"
+                      ></i>{" "}
+                      2019년 폐업
+                    </span>
+                    <span className="ml-10 center-block">
+                      <i
+                        className="icon md-circle green-a300 mr-5"
+                        aria-hidden="true"
+                      ></i>{" "}
+                      2019년 개업
+                    </span>
+                    <br />
+                    <span className="center-block">
+                      <i
+                        className="icon md-circle red-500 mr-5"
+                        aria-hidden="true"
+                      ></i>{" "}
+                      2020년 폐업
+                    </span>
+                    <span className="ml-10 center-block">
+                      <i
+                        className="icon md-circle purple-500 mr-5"
+                        aria-hidden="true"
+                      ></i>{" "}
+                      2020년 개업
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="row pt-30 px-30">
+            <div className="row pt-20 px-30">
               <div className="col-lg-12" id="main_month_chart">
                 <ChartistMonth
                   month_close_19={props.month_close_19}
