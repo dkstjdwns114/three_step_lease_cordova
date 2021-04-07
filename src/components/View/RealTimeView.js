@@ -144,10 +144,6 @@ export default class RealTimeView extends Component {
                     ) : (
                       <>
                         <p>매일 오전 9시에 전날 데이터가 업데이트 됩니다.</p>
-                        {/* <p>
-                          왼쪽에 날짜와 오른쪽에 개·폐업 선택시 해당 데이터를
-                          다운로드할 수 있습니다.
-                        </p> */}
                         <RealTimeTotalView
                           city_name={this.props.city_name}
                           one_days_ago={this.state.one_days_ago}
