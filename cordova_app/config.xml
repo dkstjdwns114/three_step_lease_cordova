@@ -10,17 +10,32 @@
     <content src="index.html" />
     <access origin="*" />
 
-    <!-- Allow links to example.com -->
-    <allow-navigation href="http://*/*" />
+    <!-- http://example.com 도메인의 웹뷰연결 허용 -->
+    <allow-navigation href="http://example.com/*" />
 
-    <!-- Wildcards are allowed for the protocol, as a prefix to the host, or as a suffix to the path -->
+    <!-- 와일드카드 * 을 이용하여 http / https 같은 프로토콜과 호스트도 모두 허용할 수 있습니다. -->
     <allow-navigation href="*://*.example.com/*" />
 
-    <!-- A wildcard can be used to whitelist the entire network, over HTTP and HTTPS. *NOT RECOMMENDED* -->
+    <!-- 또한 모든 타입을 허용할 수도 있습니다.-->
     <allow-navigation href="*" />
     
+    <!-- 모든 웹페이지를 시스템 프라우저로 오픈합니다. -->
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+
+    <!-- http 프로토콜의 example.com의 도메인을 허용합니다. -->
+    <allow-intent href="http://example.com/*" />
+
+    <!-- 모든 프로토콜과 모든 호스트 example.com 도메인을 허용합니다. -->
+    <allow-intent href="*://*.example.com/*" />
+
+    <!-- 구글의 http / https 를 허용합니다. -->
+    <allow-intent href="http://google.com" />
+    <allow-intent href="https://google.com" />
+
+     <!-- 모든 요청을 허용합니다. -->
+    <allow-intent href="*" />
+
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />

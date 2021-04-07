@@ -41,7 +41,7 @@ export default class RealTimeView extends Component {
 
   fetchData = () => {
     this.setState({ isLoading: true });
-    fetch(`/api/real_time/${this.props.city_code}`)
+    fetch(`http://52.79.102.189:8080/api/real_time/${this.props.city_code}`)
       .then((res) => {
         return res.json();
       })
