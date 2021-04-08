@@ -60,7 +60,7 @@ const CityMap = (props) => {
 
     const container = document.getElementById("city_map");
     const options = {
-      center: new kakao.maps.LatLng(35.6783, 127.9558),
+      center: new kakao.maps.LatLng(35.8383, 127.9558),
       level: 13,
       disableDoubleClickZoom: true
     };
@@ -486,7 +486,7 @@ const CityMap = (props) => {
       <div
         className="map-container mt-30"
         id="city_map"
-        style={{ height: "650px" }}
+        style={{ height: "550px" }}
       ></div>
     </>
   );

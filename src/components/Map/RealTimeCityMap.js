@@ -49,7 +49,7 @@ const RealTimeCityMap = (props) => {
 
     const container = document.getElementById("realtime_city_map");
     const options = {
-      center: new kakao.maps.LatLng(35.6783, 127.9558),
+      center: new kakao.maps.LatLng(35.8383, 127.9558),
       level: 13,
       disableDoubleClickZoom: true
     };
@@ -475,7 +475,7 @@ const RealTimeCityMap = (props) => {
       <div
         className="map-container mt-10"
         id="realtime_city_map"
-        style={{ height: "600px" }}
+        style={{ height: "550px" }}
       ></div>
     </>
   );
