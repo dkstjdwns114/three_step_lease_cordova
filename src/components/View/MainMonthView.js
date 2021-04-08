@@ -8,10 +8,7 @@ const MainMonthView = (props) => {
       <div className="col-xxl-12 col-md-12">
         <div className="card">
           <div className="card-block p-0 h-full">
-            <div
-              className="pt-5 px-15"
-              style={{ height: "calc(100% - 250px)" }}
-            >
+            <div className="pt-5 px-15">
               <div className="row">
                 <div className="pt-20 px-20">
                   <p className="font-size-20 grey-700">{props.title}</p>

@@ -18,8 +18,8 @@ export default class SameAddressView extends Component {
   }
 
   fetchData = () => {
-    // fetch(`http://52.79.102.189:8080/api/same_address/${this.props.city}`)
-    fetch(`/api/same_address/${this.props.city}`)
+    fetch(`http://52.79.102.189:8080/api/same_address/${this.props.city}`)
+      // fetch(`/api/same_address/${this.props.city}`)
       .then((res) => {
         return res.json();
       })
