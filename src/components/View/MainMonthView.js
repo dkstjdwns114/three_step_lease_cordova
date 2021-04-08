@@ -10,7 +10,7 @@ const MainMonthView = (props) => {
           <div className="card-block p-0 h-full">
             <div
               className="pt-5 px-15"
-              style={{ height: "calc(100% - 250px);" }}
+              style={{ height: "calc(100% - 250px)" }}
             >
               <div className="row">
                 <div className="pt-20 px-20">
