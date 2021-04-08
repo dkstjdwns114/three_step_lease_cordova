@@ -42,7 +42,7 @@ export default class SameAddressView extends Component {
           <div className="card">
             <div className="card-block p-0 h-full">
               <div className="row">
-                <div className="col-12 pt-30 px-40">
+                <div className="col-12 pt-20 px-30">
                   <p className="font-size-20 grey-700">
                     {this.props.city_name} 2019년, 2020년
                     <br />
@@ -72,7 +72,7 @@ export default class SameAddressView extends Component {
                   )}
                 </div>
               </div>
-              <div className="row px-10">
+              <div className="row">
                 <div className="col-lg-12">
                   {this.state.isLoading ? (
                     <RoundCircleLoading />
