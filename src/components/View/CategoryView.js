@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import CategorylTabs from "../Tab/CategoryTabs";
+import CategoryTabs from "../Tab/CategoryTabs";
 
 export default class CategoryView extends Component {
   state = {
@@ -107,7 +107,7 @@ export default class CategoryView extends Component {
       <>
         <div className="col-xxl-6 col-lg-6 col-md-12" id="category_view">
           <div className="card">
-            <div className="card-block p-0 p-30 h-full">
+            <div className="card-block p-20">
               <div className="counter text-left">
                 <span className="counter-number">
                   {this.props.city_name} 최근 2년 업종 대분류 개·폐업 현황
@@ -173,8 +173,8 @@ export default class CategoryView extends Component {
                     </button>
                   </div>
                 </div>
-                <div className="counter-label text-uppercase mb-20">
-                  <CategorylTabs
+                <div className="counter-label text-uppercase">
+                  <CategoryTabs
                     type_close_19={this.props.type_close_19}
                     type_open_19={this.props.type_open_19}
                     type_close_20={this.props.type_close_20}

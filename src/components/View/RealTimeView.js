@@ -134,7 +134,7 @@ export default class RealTimeView extends Component {
         <div className="col-xxl-6 col-lg-6 col-md-12" id="realtime_total">
           <div className="card">
             <div className="card-block p-0 h-full">
-              <div className="pt-20 px-20">
+              <div className="pt-5 px-15">
                 <div className="row">
                   <div className="col-12 pt-20 px-20">
                     <p className="font-size-20 grey-700">
@@ -195,13 +195,12 @@ export default class RealTimeView extends Component {
         <div className="col-xxl-6 col-lg-6 col-md-12" id="realtime_category">
           <div className="card">
             <div className="card-block p-0 h-full">
-              <div className="pt-20 px-20">
+              <div className="pt-5 px-15">
                 <div className="row">
                   <div className="col-12 pt-20 px-20">
                     <p className="font-size-20 grey-700">
                       {this.props.city_name} 최근 7일 개·폐업 업종 대분류
                     </p>
-                    {/* <p>매일 오전 9시에 전날 데이터가 업데이트 됩니다.</p> */}
                     {this.state.isLoading ? (
                       <RoundCircleLoading />
                     ) : (
@@ -261,7 +260,7 @@ export default class RealTimeView extends Component {
           <div className="col-xxl-4 col-lg-4 col-md-12" id="realtime_city_view">
             <div className="card">
               <div className="card-block p-0 h-full">
-                <div className="pt-20 px-20">
+                <div className="pt-5 px-15">
                   <div className="row">
                     <div className="col-12 pt-20 px-20">
                       <p className="font-size-20 grey-700">
@@ -333,7 +332,7 @@ export default class RealTimeView extends Component {
         >
           <div className="card">
             <div className="card-block p-0 h-full">
-              <div className="pt-20 px-20">
+              <div className="pt-5 px-15">
                 <div className="row">
                   <div className="col-12 pt-20 px-20">
                     <p className="font-size-20 grey-700">

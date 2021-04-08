@@ -76,7 +76,7 @@ export default class TypeDetailView extends Component {
       <>
         <div className="col-xxl-6 col-lg-6 col-md-12" id="type_detail_view">
           <div className="card">
-            <div className="card-block p-0 p-30 h-full">
+            <div className="card-block">
               <div className="counter text-left">
                 <span className="counter-number">
                   {this.props.city_name} 최근 2년 업종 중분류 개·폐업 현황

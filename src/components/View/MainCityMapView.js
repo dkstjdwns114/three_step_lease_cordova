@@ -76,7 +76,7 @@ export default class MainCityMapView extends Component {
       <>
         <div className="col-xxl-4 col-lg-4 col-md-12" id="main_city_map">
           <div className="card">
-            <div className="card-block p-0 p-30 h-full">
+            <div className="card-block p-20 h-full">
               <div className="counter text-left">
                 <span className="counter-number">
                   전국 최근 2년 행정구역별 현황
@@ -86,9 +86,9 @@ export default class MainCityMapView extends Component {
                 </div>
                 <p>년도별 개·폐업 버튼 클릭시 해당 년도로 변경됩니다.</p>
                 <p>지역 클릭시 해당 지역 상세페이지로 이동합니다.</p>
-                <div className="example example-buttons">
+                <div className="example example-buttons text-center">
                   <div
-                    className="btn-group mb-0"
+                    className="btn-group mb-0 text-center"
                     aria-label="Default button group"
                     role="group"
                   >

@@ -235,8 +235,8 @@ const RealTimeTotalView = (props) => {
           openOrClose={openOrClose}
         />
       </p>
-      <div className="row pt-30 px-30">
-        <div className="col-xxl-12 col-lg-12 col-md-12 mb-50">
+      <div className="row pt-10">
+        <div className="col-xxl-12 col-lg-12 col-md-12 mb-20">
           <RealTimeBarChart
             one_days_ago={props.one_days_ago}
             two_days_ago={props.two_days_ago}

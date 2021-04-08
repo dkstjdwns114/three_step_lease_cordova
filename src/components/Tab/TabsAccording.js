@@ -13,7 +13,7 @@ const TabsAccording = (props) => {
       <div className={sizeClass}>
         {/* <!-- Example Continuous Accordion --> */}
         <div className="card" id="same_address_table">
-          <div className="card-block p-0 p-30 h-full">
+          <div className="card-block p-0 p-20 h-full">
             <div className="counter text-left">
               <span className="counter-number">
                 {props.city_name} 2019년, 2020년
@@ -36,7 +36,7 @@ const TabsAccording = (props) => {
                     role="tab"
                   >
                     <a
-                      className="panel-title"
+                      className="panel-title pl-15 pr-40"
                       data-parent="#exampleAccordionContinuous"
                       data-toggle="collapse"
                       href="#exampleCollapseContinuousOne"
@@ -53,7 +53,7 @@ const TabsAccording = (props) => {
                     aria-labelledby="exampleHeadingContinuousOne"
                     role="tabpanel"
                   >
-                    <div className="panel-body">
+                    <div className="panel-body pl-0 pr-0">
                       <FixedHeaderTable
                         dataArr={props.most_close_20[0].stores_info}
                       />
@@ -67,7 +67,7 @@ const TabsAccording = (props) => {
                     role="tab"
                   >
                     <a
-                      className="panel-title collapsed"
+                      className="panel-title pl-15 pr-40 collapsed"
                       data-parent="#exampleAccordionContinuous"
                       data-toggle="collapse"
                       href="#exampleCollapseContinuousTwo"
@@ -84,7 +84,7 @@ const TabsAccording = (props) => {
                     aria-labelledby="exampleHeadingContinuousTwo"
                     role="tabpanel"
                   >
-                    <div className="panel-body">
+                    <div className="panel-body pl-0 pr-0">
                       <FixedHeaderTable
                         dataArr={props.most_close_20[1].stores_info}
                       />
@@ -98,7 +98,7 @@ const TabsAccording = (props) => {
                     role="tab"
                   >
                     <a
-                      className="panel-title collapsed"
+                      className="panel-title pl-15 pr-40 collapsed"
                       data-parent="#exampleAccordionContinuous"
                       data-toggle="collapse"
                       href="#exampleCollapseContinuousThree"
@@ -115,7 +115,7 @@ const TabsAccording = (props) => {
                     aria-labelledby="exampleHeadingContinuousThree"
                     role="tabpanel"
                   >
-                    <div className="panel-body">
+                    <div className="panel-body pl-0 pr-0">
                       <FixedHeaderTable
                         dataArr={props.most_close_20[2].stores_info}
                       />
@@ -129,7 +129,7 @@ const TabsAccording = (props) => {
                     role="tab"
                   >
                     <a
-                      className="panel-title collapsed"
+                      className="panel-title pl-15 pr-40 collapsed"
                       data-parent="#exampleAccordionContinuous"
                       data-toggle="collapse"
                       href="#exampleCollapseContinuousFour"
@@ -146,7 +146,7 @@ const TabsAccording = (props) => {
                     aria-labelledby="exampleHeadingContinuousFour"
                     role="tabpanel"
                   >
-                    <div className="panel-body">
+                    <div className="panel-body pl-0 pr-0">
                       <FixedHeaderTable
                         dataArr={props.most_close_20[3].stores_info}
                       />
@@ -160,7 +160,7 @@ const TabsAccording = (props) => {
                     role="tab"
                   >
                     <a
-                      className="panel-title collapsed"
+                      className="panel-title pl-15 pr-40 collapsed"
                       data-parent="#exampleAccordionContinuous"
                       data-toggle="collapse"
                       href="#exampleCollapseContinuousFive"
@@ -177,7 +177,7 @@ const TabsAccording = (props) => {
                     aria-labelledby="exampleHeadingContinuousFive"
                     role="tabpanel"
                   >
-                    <div className="panel-body">
+                    <div className="panel-body pl-0 pr-0">
                       <FixedHeaderTable
                         dataArr={props.most_close_20[4].stores_info}
                       />
@@ -191,7 +191,7 @@ const TabsAccording = (props) => {
                     role="tab"
                   >
                     <a
-                      className="panel-title collapsed"
+                      className="panel-title pl-15 pr-40 collapsed"
                       data-parent="#exampleAccordionContinuous"
                       data-toggle="collapse"
                       href="#exampleCollapseContinuousSix"
@@ -208,7 +208,7 @@ const TabsAccording = (props) => {
                     aria-labelledby="exampleHeadingContinuousSix"
                     role="tabpanel"
                   >
-                    <div className="panel-body">
+                    <div className="panel-body pl-0 pr-0">
                       <FixedHeaderTable
                         dataArr={props.most_close_20[5].stores_info}
                       />
@@ -222,7 +222,7 @@ const TabsAccording = (props) => {
                     role="tab"
                   >
                     <a
-                      className="panel-title collapsed"
+                      className="panel-title pl-15 pr-40 collapsed"
                       data-parent="#exampleAccordionContinuous"
                       data-toggle="collapse"
                       href="#exampleCollapseContinuousSeven"
@@ -239,7 +239,7 @@ const TabsAccording = (props) => {
                     aria-labelledby="exampleHeadingContinuousSeven"
                     role="tabpanel"
                   >
-                    <div className="panel-body">
+                    <div className="panel-body pl-0 pr-0">
                       <FixedHeaderTable
                         dataArr={props.most_close_20[6].stores_info}
                       />
@@ -253,7 +253,7 @@ const TabsAccording = (props) => {
                     role="tab"
                   >
                     <a
-                      className="panel-title collapsed"
+                      className="panel-title pl-15 pr-40 collapsed"
                       data-parent="#exampleAccordionContinuous"
                       data-toggle="collapse"
                       href="#exampleCollapseContinuousEight"
@@ -270,7 +270,7 @@ const TabsAccording = (props) => {
                     aria-labelledby="exampleHeadingContinuousEight"
                     role="tabpanel"
                   >
-                    <div className="panel-body">
+                    <div className="panel-body pl-0 pr-0">
                       <FixedHeaderTable
                         dataArr={props.most_close_20[7].stores_info}
                       />
@@ -284,7 +284,7 @@ const TabsAccording = (props) => {
                     role="tab"
                   >
                     <a
-                      className="panel-title collapsed"
+                      className="panel-title pl-15 pr-40 collapsed"
                       data-parent="#exampleAccordionContinuous"
                       data-toggle="collapse"
                       href="#exampleCollapseContinuousNine"
@@ -301,7 +301,7 @@ const TabsAccording = (props) => {
                     aria-labelledby="exampleHeadingContinuousNine"
                     role="tabpanel"
                   >
-                    <div className="panel-body">
+                    <div className="panel-body pl-0 pr-0">
                       <FixedHeaderTable
                         dataArr={props.most_close_20[8].stores_info}
                       />
@@ -315,7 +315,7 @@ const TabsAccording = (props) => {
                     role="tab"
                   >
                     <a
-                      className="panel-title collapsed"
+                      className="panel-title pl-15 pr-40 collapsed"
                       data-parent="#exampleAccordionContinuous"
                       data-toggle="collapse"
                       href="#exampleCollapseContinuousTen"
@@ -332,7 +332,7 @@ const TabsAccording = (props) => {
                     aria-labelledby="exampleHeadingContinuousTen"
                     role="tabpanel"
                   >
-                    <div className="panel-body">
+                    <div className="panel-body pl-0 pr-0">
                       <FixedHeaderTable
                         dataArr={props.most_close_20[9].stores_info}
                       />

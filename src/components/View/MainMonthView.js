@@ -9,7 +9,7 @@ const MainMonthView = (props) => {
         <div className="card">
           <div className="card-block p-0 h-full">
             <div
-              className="pt-20 px-20"
+              className="pt-5 px-15"
               style={{ height: "calc(100% - 250px);" }}
             >
               <div className="row">
@@ -53,7 +53,7 @@ const MainMonthView = (props) => {
                 </div>
               </div>
             </div>
-            <div className="row pt-20 px-30">
+            <div className="row pt-10 px-25">
               <div className="col-lg-12" id="main_month_chart">
                 <ChartistMonth
                   month_close_19={props.month_close_19}

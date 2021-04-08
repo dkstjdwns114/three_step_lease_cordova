@@ -19,7 +19,7 @@ const CityMonthView = (props) => {
               </div>
             </div>
             <div className="row pt-20 px-20">
-              <div className="col-lg-12" id="city_month_chart">
+              <div className="col-lg-12 pl-0" id="city_month_chart">
                 <CityMonthLineChart
                   month_close_19={props.month_close_19}
                   month_open_19={props.month_open_19}
