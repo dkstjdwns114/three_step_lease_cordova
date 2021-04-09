@@ -235,10 +235,6 @@ const DropDownMenu = (props) => {
                             <a href="#">월별 차트</a>
                           </ScrollLink>
                         </li>
-                      </ul>
-                    </li>
-                    <li className="mega-menu m-0">
-                      <ul className="list-icons">
                         <li>
                           <i
                             className="md-chevron-right"
@@ -248,6 +244,10 @@ const DropDownMenu = (props) => {
                             <a href="#">월별 테이블</a>
                           </ScrollLink>
                         </li>
+                      </ul>
+                    </li>
+                    <li className="mega-menu m-0">
+                      <ul className="list-icons">
                         <li>
                           <i
                             className="md-chevron-right"
