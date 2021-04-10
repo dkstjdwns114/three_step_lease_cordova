@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "759008433823",
+    "project_id": "three-step-lease-cordova",
+    "storage_bucket": "three-step-lease-cordova.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759008433823:android:687098b0fa0d7de397f4aa",
+        "android_client_info": {
+          "package_name": "com.example.threestep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759008433823-ljikn8au8e0f74f3982mem2eiufv4tpk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAixs9RDDQGiy-rejHLeXBaEgsIF27pJEQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759008433823-ljikn8au8e0f74f3982mem2eiufv4tpk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
