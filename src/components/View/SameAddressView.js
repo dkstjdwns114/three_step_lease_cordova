@@ -53,19 +53,21 @@ export default class SameAddressView extends Component {
                       {this.props.city_name === "전국" ? (
                         <p>
                           전국의 경우 성능상의 이유로 일부 데이터만 지도에
-                          표시됩니다. 모든 데이터&nbsp;
-                          <SameAddressDownLoadCsv
+                          표시됩니다.
+                          <br />
+                          모든 데이터는 PC에서 다운로드할 수 있습니다.
+                          {/* <SameAddressDownLoadCsv
                             same_address_list={this.state.same_address_list}
                             city_name={this.props.city_name}
-                          />
+                          /> */}
                         </p>
                       ) : (
                         <p>
-                          지도에 표시된 모든 데이터&nbsp;
-                          <SameAddressDownLoadCsv
+                          모든 데이터는 PC에서 다운로드할 수 있습니다.
+                          {/* <SameAddressDownLoadCsv
                             same_address_list={this.state.same_address_list}
                             city_name={this.props.city_name}
-                          />
+                          /> */}
                         </p>
                       )}
                     </>

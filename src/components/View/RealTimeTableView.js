@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import RealTimeBarChart from "../Chart/RealTimeBarChart";
 import RealTimeDownLoadCsv from "../Csv/RealTimeDownLoadCsv";
 import RealTimeTable from "../Table/RealTimeTable";
 
@@ -228,13 +227,13 @@ const RealTimeTableView = (props) => {
         </button>
       </div>
       <p className="pt-20 mb-20">
-        &nbsp; {currentKorValue} {openOrClose}데이터{" "}
-        <RealTimeDownLoadCsv
+        &nbsp;데이터는 PC에서 다운로드할 수 있습니다.
+        {/* <RealTimeDownLoadCsv
           data_list={csvDownData}
           date_kor={currentKorValue}
           city_name={props.city_name}
           openOrClose={openOrClose}
-        />
+        /> */}
       </p>
       <div className="row">
         <div className="col-xxl-12 col-lg-12 col-md-12 mb-20">
