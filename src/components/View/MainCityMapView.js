@@ -91,6 +91,7 @@ export default class MainCityMapView extends Component {
                     className="btn-group mb-0 text-center"
                     aria-label="Default button group"
                     role="group"
+                    style={{ margin: "10px 10px" }}
                   >
                     <button
                       type="button"

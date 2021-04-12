@@ -122,6 +122,7 @@ export default class CategoryView extends Component {
                     className="btn-group"
                     aria-label="Default button group"
                     role="group"
+                    style={{ margin: "10px 10px" }}
                   >
                     <button
                       type="button"
