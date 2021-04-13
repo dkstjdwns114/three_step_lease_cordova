@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import TabsAccording from "../components/Tab/TabsAccording";
-import MainMonthView from "../components/View/MainMonthView";
 import TypeDetailView from "../components/View/TypeDetailView";
 import MainCityMapView from "../components/View/MainCityMapView";
 import SameAddressView from "../components/View/SameAddressView";
@@ -11,6 +10,7 @@ import MainNavigation from "../components/Navigation/MainNavbar";
 import PageHeader from "../components/Navigation/PageHeader";
 import PageFooter from "../components/Navigation/PageFooter";
 import Modal from "../components/Modal/Modal";
+import CityMonthView from "../components/View/CityMonthView";
 
 export default class HomePage extends Component {
   state = {
@@ -112,7 +112,7 @@ export default class HomePage extends Component {
                     same_address_map_level={this.state.same_address_map_level}
                     isHome={true}
                   />
-                  <MainMonthView
+                  <CityMonthView
                     title={"전국 최근 2년 월별 개·폐업 현황"}
                     desc={
                       "차트 포인트를 클릭하면 해당 항목의 상세 정보를 확인할 수 있습니다"
