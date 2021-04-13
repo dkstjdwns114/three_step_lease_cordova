@@ -91,7 +91,7 @@ export default class CityPage extends Component {
       this.setState({
         city_hoall_lat: 35.160092943069934,
         city_hoall_lng: 126.85163270703299,
-        same_address_map_level: 8,
+        same_address_map_level: 9,
         city_name: "광주광역시"
       });
     } else if (city_code === "gyeongbuk") {
