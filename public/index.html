@@ -13,7 +13,7 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link
       href="%PUBLIC_URL%/remark_template/assets/images/apple-touch-icon.png"
-      rel="stylesheet"
+      rel="apple-touch-icon"
     />
     <link
       href="%PUBLIC_URL%/remark_template/assets/images/favicon.ico"
@@ -214,5 +214,19 @@
     <script src="%PUBLIC_URL%/remark_template/global/js/Plugin/jquery-appear.js"></script>
     <script src="%PUBLIC_URL%/remark_template/global/js/Plugin/nprogress.js"></script>
     <script src="%PUBLIC_URL%/remark_template/assets/examples/js/advanced/animation.js"></script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script>
+      document.addEventListener("deviceready", onDeviceReady, false);
+      // device APIs are available
+      function onDeviceReady() {
+        document.addEventListener("pause", onPause, false);
+        document.addEventListener("resume", onResume, false);
+        document.addEventListener("menubutton", onMenuKeyDown, false);
+
+        //Subscribe to topic must be last or other callback will not work
+        window.FirebasePlugin.subscribe("generalTopic");
+      }
+    </script>
   </body>
 </html>
