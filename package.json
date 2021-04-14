@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
     "chartist-plugin-tooltips-updated": "^0.1.4",
+    "firebase": "^8.4.0",
     "react": "^17.0.1",
     "react-chartist": "^0.14.4",
     "react-chartjs-2": "^2.11.1",
