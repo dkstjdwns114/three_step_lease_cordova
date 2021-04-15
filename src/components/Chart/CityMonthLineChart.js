@@ -138,6 +138,11 @@ const CityMonthLineChart = (props) => {
 
   return (
     <>
+      <p className="text-center mb-5">
+        년도별 개·폐업 라벨 터치시
+        <br />
+        해당 항목이 추가/제거 됩니다.
+      </p>
       <Line data={data} options={options} height={400} />
     </>
   );
