@@ -145,13 +145,13 @@ export default class HomePage extends Component {
                     city_code={"nationwide"}
                     city_name={this.state.city_name}
                   />
-                  <MainCityMapView
+                  {/* <MainCityMapView
                     city_close_19={this.state.city_close_19}
                     city_open_19={this.state.city_open_19}
                     city_close_20={this.state.city_close_20}
                     city_open_20={this.state.city_open_20}
                     numberWithCommas={this.numberWithCommas}
-                  />
+                  /> */}
                   <SameAddressView
                     city_code={"nationwide"}
                     city_hoall_lat={this.state.city_hoall_lat}
