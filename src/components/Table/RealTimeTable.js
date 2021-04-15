@@ -78,6 +78,7 @@ const RealTimeTable = (props) => {
         <DataGrid
           rows={rows}
           columns={columns}
+          showCellRightBorder={true}
           components={{ NoRowsOverlay: CustomNoRowsOverlay }}
         />
       </div>

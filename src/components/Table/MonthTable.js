@@ -76,6 +76,7 @@ const MonthTable = (props) => {
           autoPageSize={true}
           hideFooter={true}
           hideFooterPagination={true}
+          showCellRightBorder={true}
           components={{ NoRowsOverlay: CustomNoRowsOverlay }}
         />
       </div>
