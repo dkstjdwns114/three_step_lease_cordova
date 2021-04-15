@@ -43,33 +43,23 @@ const RealTimeCityMap = (props) => {
         markers.push(marker);
 
         var infowindow = new kakao.maps.InfoWindow({
-          content: `<div class ="label"><span class="left"></span><span class="center">${coordinates[i].store_name}</span><span class="right"></span></div>`
+          content: `<div class ="label"><span class="left"></span><span class="center">${coordinates[i].store_name}</span><span class="right"></span></div>`,
+          removable: true
         });
 
         kakao.maps.event.addListener(
           marker,
-          "mouseover",
-          makeOverListener(map, marker, infowindow)
+          "click",
+          makeClickListener(map, marker, infowindow)
         );
-        kakao.maps.event.addListener(
-          marker,
-          "mouseout",
-          makeOutListener(infowindow)
-        );
+
+        function makeClickListener(map, marker, infowindow) {
+          return function () {
+            infowindow.open(map, marker);
+          };
+        }
       }
       clusterer.addMarkers(markers);
-
-      function makeOverListener(map, marker, infowindow) {
-        return function () {
-          infowindow.open(map, marker);
-        };
-      }
-
-      function makeOutListener(infowindow) {
-        return function () {
-          infowindow.close();
-        };
-      }
     }, [500]);
   }, [props]);
 
