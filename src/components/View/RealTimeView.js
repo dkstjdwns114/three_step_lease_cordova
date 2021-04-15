@@ -334,7 +334,7 @@ export default class RealTimeView extends Component {
         >
           <div className="card">
             <div className="card-block p-0 h-full">
-              <div className="pt-5 px-15">
+              <div className="pt-20 px-20">
                 <div className="row">
                   <div className="col-12 pt-20 px-20">
                     <p className="font-size-20 grey-700">
