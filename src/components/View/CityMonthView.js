@@ -1,6 +1,6 @@
 import React from "react";
 import CityMonthLineChart from "../Chart/CityMonthLineChart";
-import SmartTable from "../Table/SmartTable";
+import MonthTable from "../Table/MonthTable";
 
 const CityMonthView = (props) => {
   return (
@@ -19,7 +19,7 @@ const CityMonthView = (props) => {
               </div>
             </div>
             <div className="row pt-10 px-20">
-              <div className="col-lg-12 pl-0" id="city_month_chart">
+              <div className="col-lg-12 pl-0" id="month_chart">
                 <CityMonthLineChart
                   month_close_19={props.month_close_19}
                   month_open_19={props.month_open_19}
@@ -29,7 +29,7 @@ const CityMonthView = (props) => {
                 />
               </div>
             </div>
-            <SmartTable
+            <MonthTable
               month_close_19={props.month_close_19}
               month_open_19={props.month_open_19}
               month_close_20={props.month_close_20}
