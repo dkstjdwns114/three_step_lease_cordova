@@ -74,10 +74,7 @@ const RealTimeTable = (props) => {
   }, [props.data_list]);
   return (
     <>
-      <div
-        className="pt-5"
-        style={{ height: 555, width: "100%", fontSize: "15px" }}
-      >
+      <div className="pt-5" style={{ height: 555, width: "100%" }}>
         <DataGrid
           rows={rows}
           columns={columns}

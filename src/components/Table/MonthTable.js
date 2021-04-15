@@ -69,10 +69,7 @@ const MonthTable = (props) => {
           표 제목 클릭시 해당 열 기준으로 내림차순 또는 오름차순으로 정렬됩니다.
         </span>
       </div>
-      <div
-        className="panel-body pt-0"
-        style={{ height: 310, width: "100%", fontSize: "15px" }}
-      >
+      <div className="panel-body pt-0" style={{ height: 295, width: "100%" }}>
         <DataGrid
           rows={rows}
           columns={columns}
