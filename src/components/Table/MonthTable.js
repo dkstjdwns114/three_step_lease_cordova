@@ -62,7 +62,7 @@ const MonthTable = (props) => {
   return (
     <>
       <div className="panel-title" id="month_table">
-        <p className="font-size-20 grey-700">
+        <p className="font-size-20 grey-700 mb-5">
           {props.city_name} 최근 2년 월별 개·폐업 표
         </p>
         <span className="panel-desc">
