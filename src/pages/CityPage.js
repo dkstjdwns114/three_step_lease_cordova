@@ -58,7 +58,8 @@ export default class CityPage extends Component {
       this.setState({
         city_hoall_lat: 36.63560796649084,
         city_hoall_lng: 127.97655434409023,
-        city_name: "충청북도"
+        city_name: "충청북도",
+        same_address_map_level: 12
       });
     } else if (city_code === "chungnam") {
       this.setState({
