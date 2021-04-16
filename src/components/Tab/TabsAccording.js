@@ -2,9 +2,15 @@ import React, { useEffect, useState } from "react";
 import FixedHeaderTable from "../Table/FixedHeaderTable";
 
 const TabsAccording = (props) => {
+  const [sizeClass, setSizeClass] = useState("col-xxl-8 col-lg-8 col-md-12");
+  useEffect(() => {
+    if (props.city_code !== "nationwide") {
+      setSizeClass("col-xxl-12 col-lg-12 col-md-12");
+    }
+  }, []);
   return (
     <>
-      <div className="col-xxl-12 col-lg-12 col-md-12">
+      <div className={sizeClass}>
         {/* <!-- Example Continuous Accordion --> */}
         <div className="card" id="same_address_table">
           <div className="card-block p-0 p-20 h-full">

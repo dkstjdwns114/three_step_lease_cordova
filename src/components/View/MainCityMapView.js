@@ -85,7 +85,6 @@ export default class MainCityMapView extends Component {
                   {this.state.currentValueKor}
                 </div>
                 <p>년도별 개·폐업 버튼 클릭시 해당 년도로 변경됩니다.</p>
-                <p>지역 클릭시 해당 지역 상세페이지로 이동합니다.</p>
                 <div className="example example-buttons text-center">
                   <div
                     className="btn-group mb-0 text-center"
