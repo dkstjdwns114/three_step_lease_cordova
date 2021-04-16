@@ -74,16 +74,14 @@ const CityMap = (props) => {
 
     // 경기
     let gyeonggidoContent = `
-      <a href="/#/city/gyeonggi">
-        <div class="overlaybox">
-          <div class="boxtitle">경기</div>
-          <ul>
-            <li class="up">
-              <span class="title">${props.numberComma(gyeonggi)}개</span>
-            </li>
-          </ul>
-        </div>
-      </a>
+      <div class="overlaybox">
+        <div class="boxtitle">경기</div>
+        <ul>
+          <li class="up">
+            <span class="title">${props.numberComma(gyeonggi)}개</span>
+          </li>
+        </ul>
+      </div>
     `;
     let gyeonggidoPosition = new kakao.maps.LatLng(37.63887, 127.436581);
 
@@ -98,16 +96,14 @@ const CityMap = (props) => {
 
     // 서울
     let seoulContent = `
-      <a href="/#/city/seoul">
-        <div class="overlaybox">
-          <div class="boxtitle">서울</div>
-          <ul>
-            <li class="up">
-              <span class="title">${props.numberComma(seoul)}개</span>
-            </li>
-          </ul>
-        </div>
-      </a>
+      <div class="overlaybox">
+        <div class="boxtitle">서울</div>
+        <ul>
+          <li class="up">
+            <span class="title">${props.numberComma(seoul)}개</span>
+          </li>
+        </ul>
+      </div>
     `;
     let seoulPosition = new kakao.maps.LatLng(36.97112, 127.757781);
 
@@ -122,16 +118,14 @@ const CityMap = (props) => {
 
     // 인천
     let incheonContent = `
-      <a href="/#/city/incheon">
-        <div class="overlaybox">
-          <div class="boxtitle">인천</div>
-          <ul>
-            <li class="up">
-              <span class="title">${props.numberComma(incheon)}개</span>
-            </li>
-          </ul>
-        </div>
-      </a>
+      <div class="overlaybox">
+        <div class="boxtitle">인천</div>
+        <ul>
+          <li class="up">
+            <span class="title">${props.numberComma(incheon)}개</span>
+          </li>
+        </ul>
+      </div>
     `;
     let incheonPosition = new kakao.maps.LatLng(37.00887, 126.846581);
 
@@ -146,16 +140,14 @@ const CityMap = (props) => {
 
     // 강원
     let gangwondoContent = `
-      <a href="/#/city/gangwon">
-        <div class="overlaybox">
-          <div class="boxtitle">강원</div>
-          <ul>
-            <li class="up">
-              <span class="title">${props.numberComma(gangwon)}개</span>
-            </li>
-          </ul>
-        </div>
-      </a>
+      <div class="overlaybox">
+        <div class="boxtitle">강원</div>
+        <ul>
+          <li class="up">
+            <span class="title">${props.numberComma(gangwon)}개</span>
+          </li>
+        </ul>
+      </div>
     `;
     let gangwondoPosition = new kakao.maps.LatLng(37.78889, 128.446977);
 
@@ -170,16 +162,14 @@ const CityMap = (props) => {
 
     // 충북
     let chungbukContent = `
-      <a href="/#/city/chungbuk">
-        <div class="overlaybox">
-          <div class="boxtitle">충북</div>
-          <ul>
-            <li class="up">
-              <span class="title">${props.numberComma(chungbuk)}개</span>
-            </li>
-          </ul>
-        </div>
-      </a>
+      <div class="overlaybox">
+        <div class="boxtitle">충북</div>
+        <ul>
+          <li class="up">
+            <span class="title">${props.numberComma(chungbuk)}개</span>
+          </li>
+        </ul>
+      </div>
     `;
     let chungbukPosition = new kakao.maps.LatLng(37.23889, 128.616977);
 
@@ -194,16 +184,14 @@ const CityMap = (props) => {
 
     // 경북
     let gyeongbukContent = `
-      <a href="/#/city/gyeongbuk">
-        <div class="overlaybox">
-          <div class="boxtitle">경북</div>
-          <ul>
-            <li class="up">
-              <span class="title">${props.numberComma(gyeongbuk)}개</span>
-            </li>
-          </ul>
-        </div>
-      </a>
+      <div class="overlaybox">
+        <div class="boxtitle">경북</div>
+        <ul>
+          <li class="up">
+            <span class="title">${props.numberComma(gyeongbuk)}개</span>
+          </li>
+        </ul>
+      </div>
     `;
     let gyeongbukPosition = new kakao.maps.LatLng(36.68889, 128.846977);
 
@@ -218,16 +206,14 @@ const CityMap = (props) => {
 
     // 충남
     let chungnamContent = `
-      <a href="/#/city/chungnam">
-        <div class="overlaybox">
-          <div class="boxtitle">충남</div>
-          <ul>
-            <li class="up">
-              <span class="title">${props.numberComma(chungnam)}개</span>
-            </li>
-          </ul>
-        </div>
-      </a>
+      <div class="overlaybox">
+        <div class="boxtitle">충남</div>
+        <ul>
+          <li class="up">
+            <span class="title">${props.numberComma(chungnam)}개</span>
+          </li>
+        </ul>
+      </div>
     `;
     let chungnamPosition = new kakao.maps.LatLng(36.36887, 126.766581);
 
@@ -242,16 +228,14 @@ const CityMap = (props) => {
 
     // 세종
     let sejongContent = `
-      <a href="/#/city/sejong">
-        <div class="overlaybox">
-          <div class="boxtitle">세종</div>
-          <ul>
-            <li class="up">
-              <span class="title">${props.numberComma(sejong)}개</span>
-            </li>
-          </ul>
-        </div>
-      </a>
+      <div class="overlaybox">
+        <div class="boxtitle">세종</div>
+        <ul>
+          <li class="up">
+            <span class="title">${props.numberComma(sejong)}개</span>
+          </li>
+        </ul>
+      </div>
     `;
     let sejongPosition = new kakao.maps.LatLng(36.39887, 127.746581);
 
@@ -266,16 +250,14 @@ const CityMap = (props) => {
 
     // 대전
     let daejeonContent = `
-      <a href="/#/city/daejeon">
-        <div class="overlaybox">
-          <div class="boxtitle">대전</div>
-          <ul>
-            <li class="up">
-              <span class="title">${props.numberComma(daejeon)}개</span>
-            </li>
-          </ul>
-        </div>
-      </a>
+      <div class="overlaybox">
+        <div class="boxtitle">대전</div>
+        <ul>
+          <li class="up">
+            <span class="title">${props.numberComma(daejeon)}개</span>
+          </li>
+        </ul>
+      </div>
     `;
     let daejeonPosition = new kakao.maps.LatLng(35.78345, 127.886581);
 
@@ -290,16 +272,14 @@ const CityMap = (props) => {
 
     // 대구
     let daeguContent = `
-      <a href="/#/city/daegu">
-        <div class="overlaybox">
-          <div class="boxtitle">대구</div>
-          <ul>
-            <li class="up">
-              <span class="title">${props.numberComma(daegu)}개</span>
-            </li>
-          </ul>
-        </div>
-      </a>
+      <div class="overlaybox">
+        <div class="boxtitle">대구</div>
+        <ul>
+          <li class="up">
+            <span class="title">${props.numberComma(daegu)}개</span>
+          </li>
+        </ul>
+      </div>
     `;
     let daeguPosition = new kakao.maps.LatLng(36.01889, 128.766977);
 
@@ -314,16 +294,14 @@ const CityMap = (props) => {
 
     // 전북
     let jeonbukContent = `
-      <a href="/#/city/jeonbuk">
-        <div class="overlaybox">
-          <div class="boxtitle">전북</div>
-          <ul>
-            <li class="up">
-              <span class="title">${props.numberComma(jeonbuk)}개</span>
-            </li>
-          </ul>
-        </div>
-      </a>
+      <div class="overlaybox">
+        <div class="boxtitle">전북</div>
+        <ul>
+          <li class="up">
+            <span class="title">${props.numberComma(jeonbuk)}개</span>
+          </li>
+        </ul>
+      </div>
     `;
     let jeonbukPosition = new kakao.maps.LatLng(35.76887, 126.856581);
 
@@ -338,16 +316,14 @@ const CityMap = (props) => {
 
     // 광주
     let gwangjuContent = `
-      <a href="/#/city/gwangju">
-        <div class="overlaybox">
-          <div class="boxtitle">광주</div>
-          <ul>
-            <li class="up">
-              <span class="title">${props.numberComma(gwangju)}개</span>
-            </li>
-          </ul>
-        </div>
-      </a>
+      <div class="overlaybox">
+        <div class="boxtitle">광주</div>
+        <ul>
+          <li class="up">
+            <span class="title">${props.numberComma(gwangju)}개</span>
+          </li>
+        </ul>
+      </div>
     `;
     let gwangjuPosition = new kakao.maps.LatLng(35.10887, 126.646581);
 
@@ -362,16 +338,14 @@ const CityMap = (props) => {
 
     // 전남
     let jeonnamContent = `
-      <a href="/#/city/jeonnam">
-        <div class="overlaybox">
-          <div class="boxtitle">전남</div>
-          <ul>
-            <li class="up">
-              <span class="title">${props.numberComma(jeonnam)}개</span>
-            </li>
-          </ul>
-        </div>
-      </a>
+      <div class="overlaybox">
+        <div class="boxtitle">전남</div>
+        <ul>
+          <li class="up">
+            <span class="title">${props.numberComma(jeonnam)}개</span>
+          </li>
+        </ul>
+      </div>
     `;
     let jeonnamPosition = new kakao.maps.LatLng(34.50887, 126.746581);
 
@@ -386,16 +360,14 @@ const CityMap = (props) => {
 
     // 경남
     let gyeongnamContent = `
-      <a href="/#/city/gyeongnam">
-        <div class="overlaybox">
-          <div class="boxtitle">경남</div>
-          <ul>
-            <li class="up">
-              <span class="title">${props.numberComma(gyeongnam)}개</span>
-            </li>
-          </ul>
-        </div>
-      </a>
+      <div class="overlaybox">
+        <div class="boxtitle">경남</div>
+        <ul>
+          <li class="up">
+            <span class="title">${props.numberComma(gyeongnam)}개</span>
+          </li>
+        </ul>
+      </div>
     `;
     let gyeongnamPosition = new kakao.maps.LatLng(35.10887, 127.546581);
 
@@ -410,16 +382,14 @@ const CityMap = (props) => {
 
     // 부산
     let busanContent = `
-      <a href="/#/city/busan">
-        <div class="overlaybox">
-          <div class="boxtitle">부산</div>
-          <ul>
-            <li class="up">
-              <span class="title">${props.numberComma(busan)}개</span>
-            </li>
-          </ul>
-        </div>
-      </a>
+      <div class="overlaybox">
+        <div class="boxtitle">부산</div>
+        <ul>
+          <li class="up">
+            <span class="title">${props.numberComma(busan)}개</span>
+          </li>
+        </ul>
+      </div>
     `;
     let busanPosition = new kakao.maps.LatLng(34.50587, 127.776581);
 
@@ -434,16 +404,14 @@ const CityMap = (props) => {
 
     // 울산
     let ulsanContent = `
-      <a href="/#/city/ulsan">
-        <div class="overlaybox">
-          <div class="boxtitle">울산</div>
-          <ul>
-            <li class="up">
-              <span class="title">${props.numberComma(ulsan)}개</span>
-            </li>
-          </ul>
-        </div>
-      </a>
+      <div class="overlaybox">
+        <div class="boxtitle">울산</div>
+        <ul>
+          <li class="up">
+            <span class="title">${props.numberComma(ulsan)}개</span>
+          </li>
+        </ul>
+      </div>
     `;
     let ulsanPosition = new kakao.maps.LatLng(35.20587, 128.626581);
 
