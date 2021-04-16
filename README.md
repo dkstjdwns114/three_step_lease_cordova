@@ -24,10 +24,12 @@
 
 - Django
 - MongoDB
+- 백엔드 코드는 사용방법 보러가기에 링크걸려있는 github에 업로드 되어있습니다.
 
-## Android Framework
+## Android
 
-- Cordova
+- Framework : Cordova
+- 푸시알림 : FCM (Firebase Cloud Messaging)
 
 ## apk 다운로드
 
