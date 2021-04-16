@@ -34,6 +34,7 @@
 ## apk 다운로드
 
 - 루트폴더에 downloadApk/THREESTEP.apk
+- <https://github.com/dkstjdwns114/three_step_lease_cordova/tree/master/downloadApk>
 
 <br/>
 
