@@ -29,6 +29,10 @@
 
 - Cordova
 
+## apk 다운로드
+
+- 루트폴더에 downloadApk/THREESTEP.apk
+
 <br/>
 
 ### 문서 구조
@@ -88,6 +92,7 @@
   │     └─View
   │           CategoryView.js         <-- 최근 2년 업종 대분류 View
   │           CityMonthView.js        <-- 최근 2년 월별 View
+  │           MainCityMapView.js      <-- 최근 2년 행정구역별 현황 View
   │           RealTimeCategoryView.js <-- 실시간데이터 업종 대분류 View
   │           RealTimeCityMapView.js  <-- 실시간데이터 지도 View
   │           RealTimeTableView.js    <-- 실시간데이터 테이블 View
